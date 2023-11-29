@@ -1,0 +1,21 @@
+{
+  "name": "@brady/db",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.ts",
+  "types": "index.ts",
+  "scripts": {
+    "db:compose-up": "docker compose up -d",
+    "db:compose-down": "docker compose down",
+    "db:generate-types": "prisma generate",
+    "db:migrate": "prisma migrate deploy",
+    "db:prisma-studio": "prisma studio",
+    "db:push": "prisma db push"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.6.0"
+  },
+  "devDependencies": {
+    "prisma": "^5.6.0"
+  }
+}
